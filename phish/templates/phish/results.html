@@ -1,0 +1,14 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'phish/style.css' %}">
+<div class="resultcon">
+  <h1><span class="company">{{company}}</span><span class="top"> &nbsp; Real-time phishing results:</span></h1>
+  {% if printable %}
+      <ul>
+        {% for result in printable %}
+          <li class="list">{{ result.first_name }} {{result.last_name}} &nbsp;&nbsp;&nbsp; Email: {{result.email}} &nbsp;&nbsp; Position: {{result.position}} &nbsp;&nbsp; Status: {{result.status}}</li>
+        {% endfor %}
+      </ul>
+        {% else %}
+          <p>No results are available.</p>
+    {% endif %}
+</div>

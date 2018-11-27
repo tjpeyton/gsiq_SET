@@ -1,0 +1,80 @@
+body {
+    background-color: white;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  width: 25%;
+  height: 25%;
+}
+.container{
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.row1{
+  margin-bottom: 5px;
+}
+.row2{
+  margin-bottom: 10px;
+}
+.btn{
+  width: 100%;
+  margin-top: 12px;
+  background-color: #172A91;
+  border-radius: 2px;
+  border: solid #172A91;
+  color: white;
+  padding: 4px 15px;
+  text-align: center;
+  opacity: 0.8;
+}
+.btn:hover{
+  opacity: 1;
+}
+input[type=password] {
+    width:100%;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    width:100%;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+footer p, h4{
+  display: inline;
+  margin: 2em;
+  text-align: center;
+}
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #172A91;
+  text-align: center;
+  color: white;
+}
+.company{
+  color: #172A91;
+}
+.top{
+  font-size: 20px;
+}
+.resultcon{
+  margin-left: 5%;
+  margin-top: 2.5%;
+}
+.list{
+  margin: 1em;
+}

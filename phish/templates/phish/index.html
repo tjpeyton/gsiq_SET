@@ -1,0 +1,36 @@
+{% load static %}
+{% load widget_tweaks %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'phish/style.css' %}">
+<img src="../../static/phish/images/TM2.PNG"/>
+<div class ="container">
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="row1">
+      {{ form.camp_id.label }}
+    </div>
+    <div class="row2">
+      {{ form.camp_id }}
+    </div>
+    <div class="row1">
+      {{ form.camp_pass.label }}
+    </div>
+    <div class="row2">
+      {{ form.camp_pass }}
+    </div>
+    <input class="btn" type="submit" value="Go">
+</form>
+</div>
+
+<footer>
+  <h4>GlobalSecurityIQ</h4>
+  <p>Buffalo, NY 14221</p>
+  <p>Info@GlobalSecurityIQ.com | Phone:(716)475-9455</p>
+</footer>
